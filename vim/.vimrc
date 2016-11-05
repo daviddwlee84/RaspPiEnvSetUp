@@ -108,3 +108,17 @@ let g:syntastic_check_on_wq=1
 
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
+
+" make backspace work like most other apps
+set backspace=indent,eol,start
+
+syntax on
+
+" DoxygenToolkit
+let g:DoxygenToolkit_briefTag_pre="@Synopsis  " 
+let g:DoxygenToolkit_paramTag_pre="@Param " 
+let g:DoxygenToolkit_returnTag="@Returns   " 
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------" 
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------" 
+let g:DoxygenToolkit_authorName="David D.W.Lee" 
+let g:DoxygenToolkit_licenseTag="My own license"
